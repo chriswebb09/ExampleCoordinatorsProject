@@ -43,6 +43,7 @@ extension MainCoordinator: CoordinatorDelegate {
             startCoordinator.delegate = self
             appCoordinator = startCoordinator
             start()
+            
         case .tabbar:
             let tabbarController = TabBarController()
             let tabbBarCoordinator = TabBarCoordinator(tabBarController: tabbarController)
