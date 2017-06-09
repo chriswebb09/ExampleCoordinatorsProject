@@ -119,19 +119,21 @@
 		A71765551EEA39AF0006DC3C /* Second */ = {
 			isa = PBXGroup;
 			children = (
-				A73DA4501EE89BA00053276E /* SecondViewController.swift */,
 				A73DA46C1EE8B2A30053276E /* SecondView.swift */,
+				A73DA4501EE89BA00053276E /* SecondViewController.swift */,
 			);
 			name = Second;
+			path = Second;
 			sourceTree = "<group>";
 		};
 		A71765561EEA39C00006DC3C /* First */ = {
 			isa = PBXGroup;
 			children = (
-				A73DA4321EE89B700053276E /* FirstViewController.swift */,
 				A71765871EEAF8CD0006DC3C /* FirstView.swift */,
+				A73DA4321EE89B700053276E /* FirstViewController.swift */,
 			);
 			name = First;
+			path = First;
 			sourceTree = "<group>";
 		};
 		A71765571EEA39D10006DC3C /* Splash */ = {
@@ -142,33 +144,36 @@
 				A71765851EEAF8A00006DC3C /* Views */,
 			);
 			name = Splash;
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		A71765581EEA39FA0006DC3C /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				A73DA4661EE8A58A0053276E /* TabBarController.swift */,
-				A73DA4521EE89BE50053276E /* Coordinator.swift */,
-				A73DA4681EE8B1620053276E /* TabControllerCoordinator.swift */,
-				A73DA4641EE8A52F0053276E /* TabBarCoordinator.swift */,
-				A73DA4621EE89E7D0053276E /* SplashCoordinator.swift */,
 				A73DA45A1EE89D490053276E /* ApplicationCoordinator.swift */,
-				A73DA4561EE89C3F0053276E /* NavigationCoordinator.swift */,
-				A73DA45C1EE89D6D0053276E /* CoordinatorType.swift */,
+				A73DA4521EE89BE50053276E /* Coordinator.swift */,
 				A73DA4541EE89C030053276E /* CoordinatorDelegate.swift */,
+				A73DA45C1EE89D6D0053276E /* CoordinatorType.swift */,
 				A73DA4581EE89D1C0053276E /* MainCoordinator.swift */,
+				A73DA4561EE89C3F0053276E /* NavigationCoordinator.swift */,
+				A73DA4621EE89E7D0053276E /* SplashCoordinator.swift */,
+				A73DA4661EE8A58A0053276E /* TabBarController.swift */,
+				A73DA4641EE8A52F0053276E /* TabBarCoordinator.swift */,
+				A73DA4681EE8B1620053276E /* TabControllerCoordinator.swift */,
 			);
 			name = Coordinator;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		A71765771EEA6F370006DC3C /* Start */ = {
 			isa = PBXGroup;
 			children = (
 				A717657E1EEAF7AD0006DC3C /* Controller */,
-				A717657F1EEAF7B30006DC3C /* Views */,
 				A717657D1EEAF7A20006DC3C /* Delegates */,
+				A717657F1EEAF7B30006DC3C /* Views */,
 			);
 			name = Start;
+			path = Start;
 			sourceTree = "<group>";
 		};
 		A71765781EEA6F440006DC3C /* Loading */ = {
@@ -178,26 +183,29 @@
 				A717656B1EEA6DA00006DC3C /* LoadingView.swift */,
 			);
 			name = Loading;
+			path = Loading;
 			sourceTree = "<group>";
 		};
 		A71765791EEA6F4C0006DC3C /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				A717656D1EEA6DBE0006DC3C /* BallIndicatorView.swift */,
-				A717656F1EEA6DE60006DC3C /* BallAnimation.swift */,
 				A71765711EEA6DFB0006DC3C /* AnimationDelegate.swift */,
+				A717656F1EEA6DE60006DC3C /* BallAnimation.swift */,
+				A717656D1EEA6DBE0006DC3C /* BallIndicatorView.swift */,
 			);
 			name = Animation;
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		A717657A1EEAF7520006DC3C /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				A71765801EEAF7E60006DC3C /* Base */,
 				A71765781EEA6F440006DC3C /* Loading */,
 				A71765751EEA6E7E0006DC3C /* ButtonMaker.swift */,
-				A71765801EEAF7E60006DC3C /* Base */,
 			);
 			name = Elements;
+			path = Elements;
 			sourceTree = "<group>";
 		};
 		A717657B1EEAF7730006DC3C /* Extensions */ = {
@@ -206,17 +214,19 @@
 				A71765591EEA3A450006DC3C /* CALayer+Extension.swift */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A717657C1EEAF7820006DC3C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				A71765771EEA6F370006DC3C /* Start */,
 				A71765561EEA39C00006DC3C /* First */,
 				A71765551EEA39AF0006DC3C /* Second */,
 				A71765571EEA39D10006DC3C /* Splash */,
+				A71765771EEA6F370006DC3C /* Start */,
 			);
 			name = Screens;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		A717657D1EEAF7A20006DC3C /* Delegates */ = {
@@ -226,6 +236,7 @@
 				A71765631EEA6B5D0006DC3C /* StartViewDelegate.swift */,
 			);
 			name = Delegates;
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		A717657E1EEAF7AD0006DC3C /* Controller */ = {
@@ -234,6 +245,7 @@
 				A717655F1EEA6B460006DC3C /* StartViewController.swift */,
 			);
 			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		A717657F1EEAF7B30006DC3C /* Views */ = {
@@ -242,6 +254,7 @@
 				A71765611EEA6B520006DC3C /* StartView.swift */,
 			);
 			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A71765801EEAF7E60006DC3C /* Base */ = {
@@ -250,6 +263,7 @@
 				A71765731EEA6E230006DC3C /* BasePopoverAlert.swift */,
 			);
 			name = Base;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		A71765831EEAF8690006DC3C /* Constants */ = {
@@ -259,6 +273,7 @@
 				A71765671EEA6D300006DC3C /* StartViewConstants.swift */,
 			);
 			name = Constants;
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		A71765841EEAF88A0006DC3C /* Controllers */ = {
@@ -267,6 +282,7 @@
 				A73DA45E1EE89D9A0053276E /* SplashViewController.swift */,
 			);
 			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		A71765851EEAF8A00006DC3C /* Views */ = {
@@ -275,15 +291,17 @@
 				A73DA4601EE89DCA0053276E /* SplashView.swift */,
 			);
 			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A71765861EEAF8A70006DC3C /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				A717655B1EEA3A740006DC3C /* SplashViewDelegate.swift */,
 				A73DA46A1EE8B2330053276E /* SplashViewControllerDelegate.swift */,
+				A717655B1EEA3A740006DC3C /* SplashViewDelegate.swift */,
 			);
 			name = Delegates;
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		A73DA4241EE89B700053276E = {
@@ -307,16 +325,16 @@
 		A73DA42F1EE89B700053276E /* ExampleCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				A71765791EEA6F4C0006DC3C /* Animation */,
+				A71765831EEAF8690006DC3C /* Constants */,
+				A71765581EEA39FA0006DC3C /* Coordinator */,
+				A717657A1EEAF7520006DC3C /* Elements */,
+				A717657B1EEAF7730006DC3C /* Extensions */,
+				A717657C1EEAF7820006DC3C /* Screens */,
 				A73DA4301EE89B700053276E /* AppDelegate.swift */,
 				A73DA4371EE89B700053276E /* Assets.xcassets */,
-				A73DA4391EE89B700053276E /* LaunchScreen.storyboard */,
 				A73DA43C1EE89B700053276E /* Info.plist */,
-				A71765581EEA39FA0006DC3C /* Coordinator */,
-				A71765831EEAF8690006DC3C /* Constants */,
-				A717657C1EEAF7820006DC3C /* Screens */,
-				A717657B1EEAF7730006DC3C /* Extensions */,
-				A71765791EEA6F4C0006DC3C /* Animation */,
-				A717657A1EEAF7520006DC3C /* Elements */,
+				A73DA4391EE89B700053276E /* LaunchScreen.storyboard */,
 			);
 			path = ExampleCoordinator;
 			sourceTree = "<group>";
@@ -495,6 +513,7 @@
 				A73DA43A1EE89B700053276E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
