@@ -61,7 +61,6 @@ final class BallIndicatorView: UIView {
         layer.sublayers?.removeAll()
     }
     
-    
     private func setUpAnimation(ballAnimation: BallAnimation) {
         let animationType: AnimationDelegate = ballAnimation
         var animationRect: CGRect = UIEdgeInsetsInsetRect(frame, UIEdgeInsetsMake(padding / 3, padding / 3, padding / 3, padding / 3))

@@ -22,6 +22,7 @@
 		A71765741EEA6E230006DC3C /* BasePopoverAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71765731EEA6E230006DC3C /* BasePopoverAlert.swift */; };
 		A71765761EEA6E7E0006DC3C /* ButtonMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71765751EEA6E7E0006DC3C /* ButtonMaker.swift */; };
 		A71765821EEAF8080006DC3C /* BasePopoverAlertConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71765811EEAF8080006DC3C /* BasePopoverAlertConstants.swift */; };
+		A71765881EEAF8CD0006DC3C /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71765871EEAF8CD0006DC3C /* FirstView.swift */; };
 		A73DA4311EE89B700053276E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73DA4301EE89B700053276E /* AppDelegate.swift */; };
 		A73DA4331EE89B700053276E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73DA4321EE89B700053276E /* FirstViewController.swift */; };
 		A73DA4381EE89B700053276E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73DA4371EE89B700053276E /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		A71765731EEA6E230006DC3C /* BasePopoverAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePopoverAlert.swift; sourceTree = "<group>"; };
 		A71765751EEA6E7E0006DC3C /* ButtonMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonMaker.swift; sourceTree = "<group>"; };
 		A71765811EEAF8080006DC3C /* BasePopoverAlertConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePopoverAlertConstants.swift; sourceTree = "<group>"; };
+		A71765871EEAF8CD0006DC3C /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		A73DA42D1EE89B700053276E /* ExampleCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73DA4301EE89B700053276E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A73DA4321EE89B700053276E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				A73DA4321EE89B700053276E /* FirstViewController.swift */,
+				A71765871EEAF8CD0006DC3C /* FirstView.swift */,
 			);
 			name = First;
 			sourceTree = "<group>";
@@ -134,10 +137,9 @@
 		A71765571EEA39D10006DC3C /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				A73DA45E1EE89D9A0053276E /* SplashViewController.swift */,
-				A73DA46A1EE8B2330053276E /* SplashViewControllerDelegate.swift */,
-				A73DA4601EE89DCA0053276E /* SplashView.swift */,
-				A717655B1EEA3A740006DC3C /* SplashViewDelegate.swift */,
+				A71765841EEAF88A0006DC3C /* Controllers */,
+				A71765861EEAF8A70006DC3C /* Delegates */,
+				A71765851EEAF8A00006DC3C /* Views */,
 			);
 			name = Splash;
 			sourceTree = "<group>";
@@ -165,7 +167,6 @@
 				A717657E1EEAF7AD0006DC3C /* Controller */,
 				A717657F1EEAF7B30006DC3C /* Views */,
 				A717657D1EEAF7A20006DC3C /* Delegates */,
-				A71765671EEA6D300006DC3C /* StartViewConstants.swift */,
 			);
 			name = Start;
 			sourceTree = "<group>";
@@ -247,9 +248,42 @@
 			isa = PBXGroup;
 			children = (
 				A71765731EEA6E230006DC3C /* BasePopoverAlert.swift */,
-				A71765811EEAF8080006DC3C /* BasePopoverAlertConstants.swift */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		A71765831EEAF8690006DC3C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A71765811EEAF8080006DC3C /* BasePopoverAlertConstants.swift */,
+				A71765671EEA6D300006DC3C /* StartViewConstants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		A71765841EEAF88A0006DC3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A73DA45E1EE89D9A0053276E /* SplashViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A71765851EEAF8A00006DC3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A73DA4601EE89DCA0053276E /* SplashView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A71765861EEAF8A70006DC3C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A717655B1EEA3A740006DC3C /* SplashViewDelegate.swift */,
+				A73DA46A1EE8B2330053276E /* SplashViewControllerDelegate.swift */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 		A73DA4241EE89B700053276E = {
@@ -278,6 +312,7 @@
 				A73DA4391EE89B700053276E /* LaunchScreen.storyboard */,
 				A73DA43C1EE89B700053276E /* Info.plist */,
 				A71765581EEA39FA0006DC3C /* Coordinator */,
+				A71765831EEAF8690006DC3C /* Constants */,
 				A717657C1EEAF7820006DC3C /* Screens */,
 				A717657B1EEAF7730006DC3C /* Extensions */,
 				A71765791EEA6F4C0006DC3C /* Animation */,
@@ -430,6 +465,7 @@
 				A71765641EEA6B5D0006DC3C /* StartViewDelegate.swift in Sources */,
 				A717656E1EEA6DBE0006DC3C /* BallIndicatorView.swift in Sources */,
 				A717655C1EEA3A740006DC3C /* SplashViewDelegate.swift in Sources */,
+				A71765881EEAF8CD0006DC3C /* FirstView.swift in Sources */,
 				A73DA46D1EE8B2A30053276E /* SecondView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
