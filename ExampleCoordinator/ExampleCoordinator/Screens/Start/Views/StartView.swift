@@ -46,7 +46,7 @@ final class StartView: UIView {
     // MARK: - Configuration Methods
     
     override func layoutSubviews() {
-        CALayer.createGradientLayer(layer: layer, bounds: bounds)
+        CALayer.createGradientLayer(layer: layer, bounds: bounds, colors: [UIColor(red:0.31, green:0.49, blue:0.63, alpha:1.0).cgColor, UIColor(red:0.18, green:0.27, blue:0.33, alpha:1.0).cgColor])
         super.layoutSubviews()
         setupElements()
         titleLabel.text = "Get started!"

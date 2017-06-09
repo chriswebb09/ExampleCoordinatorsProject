@@ -10,7 +10,7 @@ import UIKit
 
 class FirstView: UIView {
     func configure() {
-        backgroundColor = .blue
+         CALayer.createGradientLayer(layer: layer, bounds: bounds, colors: [UIColor(red:0.56, green:0.58, blue:0.59, alpha:1.0).cgColor, UIColor(red:0.27, green:0.29, blue:0.29, alpha:1.0).cgColor])
     }
 }
 

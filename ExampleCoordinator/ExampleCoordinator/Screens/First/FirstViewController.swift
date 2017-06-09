@@ -15,11 +15,14 @@ protocol FirstViewControllerDelegate: class {
 class FirstViewController: UIViewController {
     
     weak var delegate: FirstViewControllerDelegate?
+    var firstView: FirstView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "FirstViewController"
-        view.backgroundColor = .green
+        firstView = FirstView(frame:view.bounds)
+        firstView.configure()
+        view.addSubview(firstView)
         var logoutButton = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logout))
         navigationItem.rightBarButtonItems = [logoutButton]
     }
