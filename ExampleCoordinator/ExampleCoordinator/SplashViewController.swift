@@ -11,7 +11,6 @@ import UIKit
 final class SplashViewController: UIViewController {
     
     weak var delegate: SplashViewControllerDelegate?
-    
     private let splashView: SplashView!
     
     init(splashView: SplashView = SplashView()) {

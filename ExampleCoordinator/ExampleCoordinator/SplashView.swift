@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol SplashViewDelegate: class {
-    func animationIsComplete()
-}
-
 typealias completion = () -> Void
 
 final class SplashView: UIView {

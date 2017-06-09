@@ -8,12 +8,24 @@
 
 import UIKit
 
+protocol FirstViewControllerDelegate: class {
+    func logoutButtonTapped()
+}
+
 class FirstViewController: UIViewController {
+    
+    weak var delegate: FirstViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "FirstViewController"
         view.backgroundColor = .green
+        var logoutButton = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logout))
+        navigationItem.rightBarButtonItems = [logoutButton]
+    }
+    
+    func logout() {
+        print("log out")
+        delegate?.logoutButtonTapped()
     }
 }
-

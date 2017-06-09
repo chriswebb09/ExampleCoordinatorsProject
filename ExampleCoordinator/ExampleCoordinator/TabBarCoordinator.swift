@@ -11,10 +11,8 @@ import UIKit
 class TabBarCoordinator: TabControllerCoordinator {
     
     var window: UIWindow!
-    
     var childCoordinators: [NavigationCoordinator]
     var tabBarController: TabBarController
-    
     var type: CoordinatorType = .tabbar
     weak var delegate: CoordinatorDelegate?
 
@@ -25,6 +23,7 @@ class TabBarCoordinator: TabControllerCoordinator {
 
     func setup(navigationController: UINavigationController) {
         let tabCoordinator = TabCoordinator(navigationController: navigationController)
+        tabCoordinator.delegate = self
         childCoordinators.append(tabCoordinator)
     }
     
@@ -33,6 +32,15 @@ class TabBarCoordinator: TabControllerCoordinator {
         window.rootViewController = tabBarController
     }
 }
+
+extension TabBarCoordinator: CoordinatorDelegate {
+    func transitionCoordinator(type: CoordinatorType) {
+        
+    }
+
+    
+}
+
 
 class TabCoordinator: NavigationCoordinator {
    
@@ -58,8 +66,16 @@ class TabCoordinator: NavigationCoordinator {
         navigationController.viewControllers = childControllers
     }
 
-    
     func addChild(viewController: UIViewController) {
         childControllers.append(viewController)
+    }
+}
+
+
+extension TabBarCoordinator: FirstViewControllerDelegate {
+    
+    func logoutButtonTapped() {
+        print("tab logoout")
+        delegate?.transitionCoordinator(type: .app)
     }
 }

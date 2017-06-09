@@ -36,6 +36,23 @@ extension SplashCoordinator: SplashViewControllerDelegate {
     
     func splashViewFinishedAnimation(finished: Bool) {
         print("Animation is: \(finished)")
+        var startView = StartView()
+        var startViewController = StartViewController(startView: startView)
+        startViewController.delegate = self
+        navigationController.viewControllers = [startViewController]
+    }
+}
+
+extension SplashCoordinator: StartViewControllerDelegate {
+    func loginSelected() {
+        delegate?.transitionCoordinator(type: .tabbar)
+    }
+
+    func createAccountSelected() {
+        delegate?.transitionCoordinator(type: .tabbar)
+    }
+
+    func continueAsGuestSelected() {
         delegate?.transitionCoordinator(type: .tabbar)
     }
 }

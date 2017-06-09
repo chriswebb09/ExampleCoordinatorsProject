@@ -35,12 +35,21 @@ extension MainCoordinator: CoordinatorDelegate {
     func transitionCoordinator(type: CoordinatorType) {
         switch type {
         case .app:
-            break
+            let startView = StartView()
+            let startController = StartViewController(startView: startView)
+            let navController = UINavigationController(rootViewController: startController)
+            let startCoordinator = SplashCoordinator(navigationController: navController)
+            startCoordinator.setup(window: window)
+            startCoordinator.delegate = self
+            appCoordinator = startCoordinator
+            start()
         case .tabbar:
             let tabbarController = TabBarController()
             let tabbBarCoordinator = TabBarCoordinator(tabBarController: tabbarController)
             tabbBarCoordinator.window = window
+            tabbBarCoordinator.delegate = self 
             let firstViewController = FirstViewController()
+            firstViewController.delegate = tabbBarCoordinator
             let mediaTab = UINavigationController(rootViewController: firstViewController)
             tabbBarCoordinator.setup(navigationController: mediaTab)
             let secondViewController = SecondViewController()
