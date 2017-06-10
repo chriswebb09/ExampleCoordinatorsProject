@@ -30,48 +30,14 @@ class TabBarCoordinator: TabControllerCoordinator {
         childCoordinators.append(coordinator)
     }
     
-    
     func start() {
         tabBarController.setTabTitles(controllers: [childCoordinators[0].navigationController, childCoordinators[1].navigationController])
         window.rootViewController = tabBarController
     }
 }
 
-
-class TabCoordinator: NavigationCoordinator {
-   
-    var type: CoordinatorType = .tabbar
-    
-    weak var delegate: CoordinatorDelegate?
-    
-    var navigationController: UINavigationController
-    
-    var childControllers: [UIViewController]
-    
-    required init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
-        self.childControllers = []
-    }
-    
-    convenience init(navigationController: UINavigationController, controller: UIViewController) {
-        self.init(navigationController: navigationController)
-        navigationController.viewControllers = [controller]
-    }
-    
-    func start() {
-        navigationController.viewControllers = childControllers
-    }
-
-    func addChild(viewController: UIViewController) {
-        childControllers.append(viewController)
-    }
-}
-
-
-extension TabBarCoordinator: FirstViewControllerDelegate {
-    
-    func logoutButtonTapped() {
-        print("tab logoout")
-        delegate?.transitionCoordinator(type: .app)
+extension TabBarCoordinator: CoordinatorDelegate {
+    func transitionCoordinator(type: CoordinatorType) {
+        delegate?.transitionCoordinator(type: type)
     }
 }

@@ -39,28 +39,31 @@ extension MainCoordinator: CoordinatorDelegate {
             let startController = StartViewController(startView: startView)
             let navController = UINavigationController(rootViewController: startController)
             let startCoordinator = SplashCoordinator(navigationController: navController)
+            
             startCoordinator.setup(window: window)
-            startCoordinator.delegate = self
-            appCoordinator = startCoordinator
+            setup(coordinator: startCoordinator)
+            
             start()
             
         case .tabbar:
             let tabbarController = TabBarController()
             let tabbBarCoordinator = TabBarCoordinator(tabBarController: tabbarController)
             tabbBarCoordinator.window = window
-            tabbBarCoordinator.delegate = self 
+            
             let firstViewController = FirstViewController()
+            let firstTab = UINavigationController(rootViewController: firstViewController)
+            let firstTabCoordinator = TabCoordinator(navigationController: firstTab)
             firstViewController.delegate = tabbBarCoordinator
-            let mediaTab = UINavigationController(rootViewController: firstViewController)
-            let mediaTabCoordinator = TabCoordinator(navigationController: mediaTab)
-            mediaTabCoordinator.delegate = self 
-            tabbBarCoordinator.setup(coordinator: mediaTabCoordinator)
+            firstTabCoordinator.delegate = self
+            tabbBarCoordinator.setup(coordinator: firstTabCoordinator)
+            
             let secondViewController = SecondViewController()
-            let settingsTab = UINavigationController(rootViewController: secondViewController)
-            let settingsTabCoordinator = TabCoordinator(navigationController: settingsTab)
-            settingsTabCoordinator.delegate = self
-            tabbBarCoordinator.setup(coordinator: settingsTabCoordinator)
-            appCoordinator = tabbBarCoordinator
+            let secondTab = UINavigationController(rootViewController: secondViewController)
+            let secondTabCoordinator = TabCoordinator(navigationController: secondTab)
+            secondTabCoordinator.delegate = tabbBarCoordinator
+            tabbBarCoordinator.setup(coordinator: secondTabCoordinator)
+            setup(coordinator: tabbBarCoordinator)
+            
             start()
         }
     }

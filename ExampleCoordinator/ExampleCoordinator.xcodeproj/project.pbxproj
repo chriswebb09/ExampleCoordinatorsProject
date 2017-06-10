@@ -23,6 +23,8 @@
 		A71765761EEA6E7E0006DC3C /* ButtonMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71765751EEA6E7E0006DC3C /* ButtonMaker.swift */; };
 		A71765821EEAF8080006DC3C /* BasePopoverAlertConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71765811EEAF8080006DC3C /* BasePopoverAlertConstants.swift */; };
 		A71765881EEAF8CD0006DC3C /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71765871EEAF8CD0006DC3C /* FirstView.swift */; };
+		A717658A1EEC971D0006DC3C /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71765891EEC971D0006DC3C /* TabCoordinator.swift */; };
+		A717658C1EEC975D0006DC3C /* BasicButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717658B1EEC975D0006DC3C /* BasicButtonFactory.swift */; };
 		A73DA4311EE89B700053276E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73DA4301EE89B700053276E /* AppDelegate.swift */; };
 		A73DA4331EE89B700053276E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73DA4321EE89B700053276E /* FirstViewController.swift */; };
 		A73DA4381EE89B700053276E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73DA4371EE89B700053276E /* Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		A71765751EEA6E7E0006DC3C /* ButtonMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonMaker.swift; sourceTree = "<group>"; };
 		A71765811EEAF8080006DC3C /* BasePopoverAlertConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePopoverAlertConstants.swift; sourceTree = "<group>"; };
 		A71765871EEAF8CD0006DC3C /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		A71765891EEC971D0006DC3C /* TabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		A717658B1EEC975D0006DC3C /* BasicButtonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicButtonFactory.swift; sourceTree = "<group>"; };
 		A73DA42D1EE89B700053276E /* ExampleCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73DA4301EE89B700053276E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A73DA4321EE89B700053276E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +126,6 @@
 				A73DA46C1EE8B2A30053276E /* SecondView.swift */,
 				A73DA4501EE89BA00053276E /* SecondViewController.swift */,
 			);
-			name = Second;
 			path = Second;
 			sourceTree = "<group>";
 		};
@@ -132,7 +135,6 @@
 				A71765871EEAF8CD0006DC3C /* FirstView.swift */,
 				A73DA4321EE89B700053276E /* FirstViewController.swift */,
 			);
-			name = First;
 			path = First;
 			sourceTree = "<group>";
 		};
@@ -143,7 +145,6 @@
 				A71765861EEAF8A70006DC3C /* Delegates */,
 				A71765851EEAF8A00006DC3C /* Views */,
 			);
-			name = Splash;
 			path = Splash;
 			sourceTree = "<group>";
 		};
@@ -159,9 +160,9 @@
 				A73DA4621EE89E7D0053276E /* SplashCoordinator.swift */,
 				A73DA4661EE8A58A0053276E /* TabBarController.swift */,
 				A73DA4641EE8A52F0053276E /* TabBarCoordinator.swift */,
+				A71765891EEC971D0006DC3C /* TabCoordinator.swift */,
 				A73DA4681EE8B1620053276E /* TabControllerCoordinator.swift */,
 			);
-			name = Coordinator;
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
@@ -172,7 +173,6 @@
 				A717657D1EEAF7A20006DC3C /* Delegates */,
 				A717657F1EEAF7B30006DC3C /* Views */,
 			);
-			name = Start;
 			path = Start;
 			sourceTree = "<group>";
 		};
@@ -182,7 +182,6 @@
 				A71765691EEA6D840006DC3C /* LoadingPopover.swift */,
 				A717656B1EEA6DA00006DC3C /* LoadingView.swift */,
 			);
-			name = Loading;
 			path = Loading;
 			sourceTree = "<group>";
 		};
@@ -193,7 +192,6 @@
 				A717656F1EEA6DE60006DC3C /* BallAnimation.swift */,
 				A717656D1EEA6DBE0006DC3C /* BallIndicatorView.swift */,
 			);
-			name = Animation;
 			path = Animation;
 			sourceTree = "<group>";
 		};
@@ -203,8 +201,8 @@
 				A71765801EEAF7E60006DC3C /* Base */,
 				A71765781EEA6F440006DC3C /* Loading */,
 				A71765751EEA6E7E0006DC3C /* ButtonMaker.swift */,
+				A717658B1EEC975D0006DC3C /* BasicButtonFactory.swift */,
 			);
-			name = Elements;
 			path = Elements;
 			sourceTree = "<group>";
 		};
@@ -213,7 +211,6 @@
 			children = (
 				A71765591EEA3A450006DC3C /* CALayer+Extension.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -225,7 +222,6 @@
 				A71765571EEA39D10006DC3C /* Splash */,
 				A71765771EEA6F370006DC3C /* Start */,
 			);
-			name = Screens;
 			path = Screens;
 			sourceTree = "<group>";
 		};
@@ -235,7 +231,6 @@
 				A71765651EEA6B690006DC3C /* StartViewControllerDelegate.swift */,
 				A71765631EEA6B5D0006DC3C /* StartViewDelegate.swift */,
 			);
-			name = Delegates;
 			path = Delegates;
 			sourceTree = "<group>";
 		};
@@ -244,7 +239,6 @@
 			children = (
 				A717655F1EEA6B460006DC3C /* StartViewController.swift */,
 			);
-			name = Controller;
 			path = Controller;
 			sourceTree = "<group>";
 		};
@@ -253,7 +247,6 @@
 			children = (
 				A71765611EEA6B520006DC3C /* StartView.swift */,
 			);
-			name = Views;
 			path = Views;
 			sourceTree = "<group>";
 		};
@@ -262,7 +255,6 @@
 			children = (
 				A71765731EEA6E230006DC3C /* BasePopoverAlert.swift */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -272,7 +264,6 @@
 				A71765811EEAF8080006DC3C /* BasePopoverAlertConstants.swift */,
 				A71765671EEA6D300006DC3C /* StartViewConstants.swift */,
 			);
-			name = Constants;
 			path = Constants;
 			sourceTree = "<group>";
 		};
@@ -281,7 +272,6 @@
 			children = (
 				A73DA45E1EE89D9A0053276E /* SplashViewController.swift */,
 			);
-			name = Controllers;
 			path = Controllers;
 			sourceTree = "<group>";
 		};
@@ -290,7 +280,6 @@
 			children = (
 				A73DA4601EE89DCA0053276E /* SplashView.swift */,
 			);
-			name = Views;
 			path = Views;
 			sourceTree = "<group>";
 		};
@@ -300,7 +289,6 @@
 				A73DA46A1EE8B2330053276E /* SplashViewControllerDelegate.swift */,
 				A717655B1EEA3A740006DC3C /* SplashViewDelegate.swift */,
 			);
-			name = Delegates;
 			path = Delegates;
 			sourceTree = "<group>";
 		};
@@ -456,6 +444,7 @@
 				A71765621EEA6B520006DC3C /* StartView.swift in Sources */,
 				A73DA4611EE89DCB0053276E /* SplashView.swift in Sources */,
 				A71765821EEAF8080006DC3C /* BasePopoverAlertConstants.swift in Sources */,
+				A717658A1EEC971D0006DC3C /* TabCoordinator.swift in Sources */,
 				A73DA4591EE89D1C0053276E /* MainCoordinator.swift in Sources */,
 				A73DA4651EE8A52F0053276E /* TabBarCoordinator.swift in Sources */,
 				A73DA4511EE89BA00053276E /* SecondViewController.swift in Sources */,
@@ -466,6 +455,7 @@
 				A71765601EEA6B460006DC3C /* StartViewController.swift in Sources */,
 				A717656A1EEA6D840006DC3C /* LoadingPopover.swift in Sources */,
 				A73DA4691EE8B1620053276E /* TabControllerCoordinator.swift in Sources */,
+				A717658C1EEC975D0006DC3C /* BasicButtonFactory.swift in Sources */,
 				A71765701EEA6DE60006DC3C /* BallAnimation.swift in Sources */,
 				A73DA45D1EE89D6D0053276E /* CoordinatorType.swift in Sources */,
 				A71765681EEA6D300006DC3C /* StartViewConstants.swift in Sources */,
