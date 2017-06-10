@@ -23,7 +23,7 @@ class FirstViewController: UIViewController {
         firstView = FirstView(frame:view.bounds)
         firstView.configure()
         view.addSubview(firstView)
-        var logoutButton = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logout))
+        let logoutButton = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logout))
         navigationItem.rightBarButtonItems = [logoutButton]
     }
     

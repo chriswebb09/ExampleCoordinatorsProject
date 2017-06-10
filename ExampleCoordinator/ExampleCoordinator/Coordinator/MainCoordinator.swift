@@ -52,10 +52,14 @@ extension MainCoordinator: CoordinatorDelegate {
             let firstViewController = FirstViewController()
             firstViewController.delegate = tabbBarCoordinator
             let mediaTab = UINavigationController(rootViewController: firstViewController)
-            tabbBarCoordinator.setup(navigationController: mediaTab)
+            let mediaTabCoordinator = TabCoordinator(navigationController: mediaTab)
+            mediaTabCoordinator.delegate = self 
+            tabbBarCoordinator.setup(coordinator: mediaTabCoordinator)
             let secondViewController = SecondViewController()
             let settingsTab = UINavigationController(rootViewController: secondViewController)
-            tabbBarCoordinator.setup(navigationController: settingsTab)
+            let settingsTabCoordinator = TabCoordinator(navigationController: settingsTab)
+            settingsTabCoordinator.delegate = self
+            tabbBarCoordinator.setup(coordinator: settingsTabCoordinator)
             appCoordinator = tabbBarCoordinator
             start()
         }

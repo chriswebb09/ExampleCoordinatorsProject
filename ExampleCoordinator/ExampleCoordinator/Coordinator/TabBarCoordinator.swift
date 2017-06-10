@@ -23,22 +23,18 @@ class TabBarCoordinator: TabControllerCoordinator {
 
     func setup(navigationController: UINavigationController) {
         let tabCoordinator = TabCoordinator(navigationController: navigationController)
-        tabCoordinator.delegate = self
         childCoordinators.append(tabCoordinator)
     }
+    
+    func setup(coordinator: TabCoordinator) {
+        childCoordinators.append(coordinator)
+    }
+    
     
     func start() {
         tabBarController.setTabTitles(controllers: [childCoordinators[0].navigationController, childCoordinators[1].navigationController])
         window.rootViewController = tabBarController
     }
-}
-
-extension TabBarCoordinator: CoordinatorDelegate {
-    func transitionCoordinator(type: CoordinatorType) {
-        
-    }
-
-    
 }
 
 
