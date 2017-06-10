@@ -45,6 +45,7 @@
 		A73DA4691EE8B1620053276E /* TabControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73DA4681EE8B1620053276E /* TabControllerCoordinator.swift */; };
 		A73DA46B1EE8B2330053276E /* SplashViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73DA46A1EE8B2330053276E /* SplashViewControllerDelegate.swift */; };
 		A73DA46D1EE8B2A30053276E /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73DA46C1EE8B2A30053276E /* SecondView.swift */; };
+		A7B840C41EECA5920049BB78 /* LoginButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B840C31EECA5920049BB78 /* LoginButtonFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		A73DA4681EE8B1620053276E /* TabControllerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabControllerCoordinator.swift; sourceTree = "<group>"; };
 		A73DA46A1EE8B2330053276E /* SplashViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewControllerDelegate.swift; sourceTree = "<group>"; };
 		A73DA46C1EE8B2A30053276E /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		A7B840C31EECA5920049BB78 /* LoginButtonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButtonFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,10 +160,7 @@
 				A73DA4581EE89D1C0053276E /* MainCoordinator.swift */,
 				A73DA4561EE89C3F0053276E /* NavigationCoordinator.swift */,
 				A73DA4621EE89E7D0053276E /* SplashCoordinator.swift */,
-				A73DA4661EE8A58A0053276E /* TabBarController.swift */,
-				A73DA4641EE8A52F0053276E /* TabBarCoordinator.swift */,
-				A71765891EEC971D0006DC3C /* TabCoordinator.swift */,
-				A73DA4681EE8B1620053276E /* TabControllerCoordinator.swift */,
+				A7B840C51EECA5AB0049BB78 /* Tab */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -200,8 +199,7 @@
 			children = (
 				A71765801EEAF7E60006DC3C /* Base */,
 				A71765781EEA6F440006DC3C /* Loading */,
-				A71765751EEA6E7E0006DC3C /* ButtonMaker.swift */,
-				A717658B1EEC975D0006DC3C /* BasicButtonFactory.swift */,
+				A7B840C21EECA5620049BB78 /* Button */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -336,6 +334,27 @@
 			path = ExampleCoordinatorTests;
 			sourceTree = "<group>";
 		};
+		A7B840C21EECA5620049BB78 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				A71765751EEA6E7E0006DC3C /* ButtonMaker.swift */,
+				A717658B1EEC975D0006DC3C /* BasicButtonFactory.swift */,
+				A7B840C31EECA5920049BB78 /* LoginButtonFactory.swift */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		A7B840C51EECA5AB0049BB78 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A73DA4661EE8A58A0053276E /* TabBarController.swift */,
+				A73DA4641EE8A52F0053276E /* TabBarCoordinator.swift */,
+				A71765891EEC971D0006DC3C /* TabCoordinator.swift */,
+				A73DA4681EE8B1620053276E /* TabControllerCoordinator.swift */,
+			);
+			name = Tab;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -464,6 +483,7 @@
 				A73DA46B1EE8B2330053276E /* SplashViewControllerDelegate.swift in Sources */,
 				A717655A1EEA3A450006DC3C /* CALayer+Extension.swift in Sources */,
 				A73DA4311EE89B700053276E /* AppDelegate.swift in Sources */,
+				A7B840C41EECA5920049BB78 /* LoginButtonFactory.swift in Sources */,
 				A73DA4631EE89E7D0053276E /* SplashCoordinator.swift in Sources */,
 				A73DA4671EE8A58A0053276E /* TabBarController.swift in Sources */,
 				A71765761EEA6E7E0006DC3C /* ButtonMaker.swift in Sources */,
