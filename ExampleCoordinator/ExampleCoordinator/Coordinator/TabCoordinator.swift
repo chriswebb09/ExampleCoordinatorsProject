@@ -37,7 +37,6 @@ class TabCoordinator: NavigationCoordinator {
     }
 }
 
-
 extension TabBarCoordinator: FirstViewControllerDelegate {
     
     func logoutButtonTapped() {

@@ -23,8 +23,8 @@ final class TabBarController: UITabBarController {
     }
     
     func setup(with controllerOne: UIViewController, and controllerTwo: UIViewController) {
-        let tabOne = setupTab(settingsViewController: controllerOne)
-        let tabTwo = setupTab(settingsViewController: controllerTwo)
+        let tabOne = setupTab(viewController: controllerOne)
+        let tabTwo = setupTab(viewController: controllerTwo)
         setTabTitles(controllers: [tabOne, tabTwo])
     }
     
@@ -39,7 +39,7 @@ final class TabBarController: UITabBarController {
         selectedIndex = 0
     }
     
-    private func setupTab(settingsViewController: UIViewController) -> UINavigationController {
-        return UINavigationController(rootViewController: settingsViewController)
+    private func setupTab(viewController: UIViewController) -> UINavigationController {
+        return UINavigationController(rootViewController: viewController)
     }
 }
